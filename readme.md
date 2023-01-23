@@ -9,9 +9,9 @@
 и создания поискового индекса в Базе Данных (далее - БД) каждой страницы.
 
 ## Системные требования 
-- [Java 17](https://www.oracle.com/java/technologies/downloads/#java17)
-- [Maven 4.0](https://maven.apache.org/download.cgi#system-requirements-1)
-- [БД MySQL](https://www.mysql.com/downloads/)
+- [Java 17](https://www.oracle.com/java/technologies/downloads/#java17) и выше
+- [Maven 4.0](https://maven.apache.org/download.cgi#system-requirements-1) и выше
+- [БД MySQL 8.0](https://www.mysql.com/downloads/) и выше
 - Browser
 
 ## Спецификация API
@@ -83,7 +83,9 @@
 1. Выберите корневую директорию проекта (далее - `/project`) и склонируйте в неё файлы проекта удобным для вас способом.  
    При клонировании с помощью Git Bash перейдите в `/project` с помощью команд `cd` и `ls`.  
    Далее выполните команду:  
-   `git clone https://github.com/eduardich/Search-Engine.git`.
+   ```
+   git clone https://github.com/eduardich/Search-Engine.git
+   ```
 2. Заполните файл конфигурации `application.yaml`, используя [описание](#необходимые-настройки) ниже.
 3. Если БД MySQL ещё не установлена, можете воспользоваться инструкцией по установке [MySQL в Docker](#подключение-к-бд-mysql-в-docker-контейнере).
 4. Убедитесь, что у вас установлен Maven выполнив команду `mvn -v`.  
@@ -168,13 +170,13 @@ user-config:
 Команда для установки необходимого [Docker контейтнера](https://hub.docker.com/_/mysql)
 
 ```
-docker pull mysql:latest
+docker pull mysql:8.0
 ```
 
 Команда для запуска Docker контейнера
 
 ```
-docker run --name mysqltest -p 3306:3306 -p 33060:33060 -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_DATABASE=search -d mysql:latest
+docker run --name mysqltest -p 3306:3306 -p 33060:33060 -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_DATABASE=search -d mysql:8.0
 ```
 
 После выполнения команды выше, для подключения приложения к БД, в `application.yaml` необходимо
