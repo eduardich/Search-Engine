@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.lucene.analysis</groupId>
+  <artifactId>morphology</artifactId>
+  <versioning>
+    <release>${morphology.version}</release>
+    <versions>
+      <version>${morphology.version}</version>
+    </versions>
+    <lastUpdated>20230131155540</lastUpdated>
+  </versioning>
+</metadata>

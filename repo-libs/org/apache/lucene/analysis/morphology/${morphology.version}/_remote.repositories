@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 31 18:55:42 MSK 2023
+morphology-${morphology.version}.jar>=
+morphology-${morphology.version}.pom>=
