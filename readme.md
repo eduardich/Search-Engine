@@ -96,7 +96,7 @@
 5. Убедитесь, что у вас установлен Maven выполнив команду `mvn -v`.  
    Если команда не распознается системой, то воспользуйтесь
    [инструкцией по установке  Maven](https://maven.apache.org/install.html).
-6. Работая в `/project`, запустите компиляцию проекта командой `mvn compile`
+6. Работая в `/project`, запустите компиляцию проекта командой `mvn clean compile`
 7. Запустите скомпилированный код командой
    ```
    mvn exec:java -Dexec.mainClass="com.example.search_engine.SearchEngineApplication"
