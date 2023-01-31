@@ -3,9 +3,9 @@
   <groupId>org.apache.lucene.analysis</groupId>
   <artifactId>morphology</artifactId>
   <versioning>
-    <release>${morphology.version}</release>
+    <release>1.5</release>
     <versions>
-      <version>${morphology.version}</version>
+      <version>1.5</version>
     </versions>
     <lastUpdated>20230131155540</lastUpdated>
   </versioning>
