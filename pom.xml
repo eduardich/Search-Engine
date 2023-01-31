@@ -24,8 +24,8 @@
 
     <repositories>
         <repository>
-            <id>skillbox-gitlab</id>
-            <url>https://gitlab.skillbox.ru/api/v4/projects/263574/packages/maven</url>
+            <id>libs</id>
+            <url>file://${project.basedir}/libs</url>
         </repository>
     </repositories>
 
